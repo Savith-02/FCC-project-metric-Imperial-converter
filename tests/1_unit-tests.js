@@ -136,19 +136,6 @@ suite("Unit Tests", function () {
       });
     });
     suite("Test for convertion", () => {
-      // const convert = (dataSet) => {
-      //   for (let i = 0; i < dataSet.length; i++) {
-      //     const initNum = convertHandler.getNum(dataSet[i][0]);
-      //     const initUnit = convertHandler.getUnit(dataSet[i][0]);
-      //     const returnNum = convertHandler.convert(initNum, initUnit);
-      //     const returnUnit = convertHandler.getReturnUnit(initUnit);
-      //     assert.strictEqual(
-      //       returnNum + returnUnit,
-      //       dataSet[i][1],
-      //       `The output of ${dataSet[i][0]} should be equal to ${dataSet[i][1]}`
-      //     );
-      //   }
-      // };
       // #1
       test("Test the conversion of lbs to kg", function () {
         const dataSet = [
