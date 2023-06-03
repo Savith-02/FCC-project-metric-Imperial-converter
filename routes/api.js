@@ -24,11 +24,8 @@ function app(app) {
       return;
     } else if (!input.match(regexForDigit) && input.match(regexForUnit)) {
       res.json("invalid number");
-      //console.log("here2");
-      //console.log(input.match(regexForDigit));
       return;
     } else if (!input.match(regexForAll)) {
-      //console.log(input.match(regexForAll));
       res.json("invalid number and unit");
       return;
     }
@@ -42,16 +39,6 @@ function app(app) {
       returnNum,
       returnUnit
     );
-
-    // console.log("GetNum " + convertHandler.getNum(input)[0]);
-    // console.log("GetUnit " + convertHandler.getUnit(input)[1]);
-    // console.log(
-    //   "getReturnUnit " +
-    //     convertHandler.getReturnUnit(convertHandler.getUnit(input)[0])
-    // );
-    // console.log(
-    //   "Conversion " + convertHandler.convert(initNum, initUnit) + "\n"
-    // );
 
     res.json({
       initNum,
